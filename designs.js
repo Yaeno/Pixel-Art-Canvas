@@ -1,8 +1,8 @@
 
 $('#btn_generate').on('click',function(evt){
 	$('#pixelCanvas').html('');
-	var rows = $('input[name="width"]').val(),
-	    cols = $('input[name="height"]').val();
+	var rows = $('input[name="height"]').val(),
+	    cols = $('input[name="width"]').val();
 
 	for (var i = 0; i < rows; i++){
 		$('#pixelCanvas').append('<tr></tr>')
@@ -19,7 +19,7 @@ $('#btn_generate').on('click',function(evt){
 });
 
 $('#btn_clear').on('click',function(evt){
-	$('pixelCanvas').remove();
+	$('table').remove();
 });
 
 $('#pixelCanvas').click(function(evt) {
